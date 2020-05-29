@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính năm nhuận</title>
+</head>
+<body>
+    <script>
+        let year =  parseInt(prompt("Enter a year?"))
+        let leapYear = false;
+
+         let year4 = year % 4 == 0;
+         if(year4){
+             let year100 = year % 100 == 0;
+             if(year100){
+                 let year400 = year % 400 == 0;
+                 if(year400){
+                     leapYear = true;
+                 }
+             }else leapYear = true;
+         }
+    if(leapYear){
+        alert(year + " is a leap year")
+    }else {
+        alert(year + " is NOT a leap year")
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập sử dụng switch /case </title>
+</head>
+<body>
+        <script>
+            let browser = prompt('Please type you', '');
+            switch (browser) {
+                case 'Edge':
+                    alert("You've got the Edge!");
+                    break;
+                    case 'Chrome':
+                    case 'Firefox':
+                    case 'Safari':
+                    case 'Opera':
+                        alert('okay we support there browers too');
+                        break;
+                    default:
+                        alert('We hope that this page look ok!')
+            }
+            let a = parseInt(prompt('a?', ''));
+            switch (a) {
+                case 0:
+                    alert(0);
+                    break;
+                case 1:
+                    alert(1);
+                    break;
+                case 2:
+                case 3:
+                    alert('2,3');
+                    break;
+                default:
+                    alert('nhập vào từ 1 đến 3');
+
+            }
+        </script>
+</body>
+</html>
